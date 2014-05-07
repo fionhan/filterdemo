@@ -17,8 +17,12 @@ namespace FilterDemo.Controllers
             return View();
         }
 
-        public ActionResult TableTest()
+        public ActionResult TableTest(string userName)
         {
+            // 测试-此处,如果直接在地址栏中输入url且参数中包含中文时,只有在IE中不会进行编码,
+            //这样会导致接受的字符串为乱码,而在火狐和chrome中接受的参数均正常
+            //所以在IE中,如果不是主动发请求而是从外部调用时,url在给的时候要进行编码
+            //用Server.UrlEncode()将参数编码
             return View();
         }
 
