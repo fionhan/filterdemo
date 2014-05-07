@@ -17,6 +17,11 @@ namespace FilterDemo.Controllers
             return View();
         }
 
+        public ActionResult TableTest()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your app description page.";
